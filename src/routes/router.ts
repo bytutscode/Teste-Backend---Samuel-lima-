@@ -19,7 +19,7 @@ router.put('/products/:id', validator(updateProductSchema), product.updateProduc
 router.delete('/products/:id', product.deleteProduct);
 
 // extra
-router.get('/municipio', getMunicipalities)
+router.get('/municipios', getMunicipalities)
 
 
 export default router;

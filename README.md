@@ -23,7 +23,8 @@ npm install
     - Tem um arquivo de configuração do banco de dados em src/database chamado "schema.sql"
     - rode via query no seu banco de dados o primeiro comando para a criação do banco de dados
     - entre na query do banco de dados criado
-    - agora rode o segundo comando para criar a tabela "products" no nosso banco de dados
+    - agora rode os comandos para criar as tabelas "products" e "municipalities" no nosso banco de dados
+
 
 ## Inicializando o projeto 
 ```
@@ -40,7 +41,12 @@ GET '/products/:id'
 POST '/products'
 PUT '/products/:id'
 DEL '/products/:id'
+
+
+GET '/municipios'
 ```
+
+
 
 ## como usar 
 

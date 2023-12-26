@@ -1,5 +1,5 @@
 CREATE DATABASE store; 
--- after database created, open it and run this second query
+-- after database created, open it and run this commands below on database created query
 CREATE TABLE IF NOT EXISTS "products" 
     (			
         "id"  SERIAL PRIMARY KEY,
@@ -16,4 +16,4 @@ CREATE TABLE IF NOT EXISTS "products"
 CREATE TABLE IF NOT EXISTS "municipalities" (
     "id"  SERIAL PRIMARY KEY,
     "name" VARCHAR(255) NOT NULL
-)
+);
