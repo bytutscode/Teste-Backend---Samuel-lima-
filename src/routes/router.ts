@@ -3,6 +3,7 @@ import product from "../controllers/product";
 import { createProductSchema } from "../middlewares/validation/createProductSchema";
 import validator from '../middlewares/validation/validator';
 import { updateProductSchema } from "../middlewares/validation/updateProductSchema";
+import { getMunicipalities } from "../controllers/extra/ibgeAPISerach";
 
 const router = Router();
 
@@ -16,6 +17,9 @@ router.get('/products', product.getProducts);
 router.get('/products/:id', product.getProduct);
 router.put('/products/:id', validator(updateProductSchema), product.updateProduct);
 router.delete('/products/:id', product.deleteProduct);
+
+// extra
+router.get('/municipio', getMunicipalities)
 
 
 export default router;
